@@ -5,20 +5,20 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.4.RELEASE</version>
+        <version>2.1.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>ninckblokje.spring</groupId>
     <artifactId>k8s-spring-boot-admin</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <name>k8s-spring-boot-admin</name>
-    <description>Demo project for Spring Boot</description>
 
     <properties>
+        <adoptopenjdk.version>11.0.4_11-jre-openj9-0.15.1</adoptopenjdk.version>
         <java.version>11</java.version>
-        <jib.version>1.1.2</jib.version>
-        <spring-boot-admin.version>2.1.4</spring-boot-admin.version>
-        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+        <jib.version>1.5.0</jib.version>
+        <spring-boot-admin.version>2.1.6</spring-boot-admin.version>
+        <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -68,7 +68,7 @@
                 <version>${jib.version}</version>
                 <configuration>
                     <from>
-                        <image>adoptopenjdk/openjdk11:alpine-slim</image>
+                        <image>adoptopenjdk:${adoptopenjdk.version}</image>
                     </from>
                     <to>
                         <image>ninckblokje/k8s-spring-boot-admin</image>
